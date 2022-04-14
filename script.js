@@ -61,12 +61,28 @@ console.log(unique("thequickbrownfoxjumpsoverthelazydog"))
 
 function secondHighestAndLowest(arr) {
     let sorted = arr.sort((a, b) => a-b)
-    return `${sorted[1]},${sorted.splice(-2, 1)}`
+    let result = [sorted[1], sorted.splice(-2, 1)[0]]
+    return result
 }
 console.log(secondHighestAndLowest([1,2,3,4,5]))
 
 function bubleSort(arr){
     return arr.sort((a, b) => b-a)
 }
-
 console.log(bubleSort([12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213]))
+
+function checkReversePrime(callback, n){
+    result = callback(n)
+    return isPrime(result)
+}
+checkReversePrime(reverseNumber, 23)
+
+
+exports.reverseNumber = reverseNumber
+exports.alphabetize = alphabetize
+exports.firstLetterUppercase = firstLetterUppercase
+exports.isPrime = isPrime
+exports.unique = unique
+exports.secondHighestAndLowest = secondHighestAndLowest; 
+exports.bubleSort = bubleSort
+exports.checkReversePrime = checkReversePrime

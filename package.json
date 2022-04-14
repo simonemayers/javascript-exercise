@@ -1,0 +1,26 @@
+{
+  "name": "javascript-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "collectCoverage": true, 
+    "coverageReporters": ["html", "text"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonemayers/javascript-exercise.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simonemayers/javascript-exercise/issues"
+  },
+  "homepage": "https://github.com/simonemayers/javascript-exercise#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
